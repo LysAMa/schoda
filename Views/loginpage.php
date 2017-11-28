@@ -1,9 +1,3 @@
-<?php 
-
-
-
-?>
-
 <!DOCTYPE html>
 
 <html>
@@ -11,6 +5,7 @@
     <title>Schoda</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<<<<<<< HEAD
       <link href="../Public/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 
       <!-- ################################################################################################ -->
@@ -21,10 +16,19 @@
       <script type="text/javascript" src="../Public/static/Js/jquery.min.js"></script>
       <script type="text/javascript" src="../Public/static/bootstrap/dist/js/bootstrap.min.js"></script>
 
+=======
+      <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+      			<!-- importation des classes css de bootstrap -->
+      <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="../Style/style.css"/>
+      <script type="text/javascript" src="../Js/jquery.min.js"></script>
+      <script type="text/javascript" src="../bootstrap/dist/js/bootstrap.min.js"></script>
+>>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
   </head>
 
 
 <body id="top">
+<<<<<<< HEAD
 <!-- ################################################################################################ -->
 
   <div class="wrapper row0">
@@ -85,7 +89,14 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- Top Background Image Wrapper -->
+=======
+  <?php
+  	// include("tete.php"); 
+  	require_once("tete.php");
+  ?>
+>>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
 
+  <!-- Top Background Image Wrapper -->
   <!-- test modal -->
   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 

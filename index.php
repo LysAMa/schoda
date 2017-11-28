@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 
 
@@ -7,25 +8,25 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Schoda</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      <link href="Public/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<head>
+  <title>Schoda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="Public/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 
-      <!-- ################################################################################################ -->
-      		<!-- importation de bootstrap dans le projet -->
-      			<!-- importation des classes css de bootstrap -->
-      <link rel="stylesheet" type="text/css" href="Public/static/bootstrap/dist/css/bootstrap.min.css"/>
-      <link rel="stylesheet" type="text/css" href="Public/static/Style/style.css"/>
-      <script type="text/javascript" src="Public/static/Js/jquery.min.js"></script>
-      <script type="text/javascript" src="Public/static/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- ################################################################################################ -->
+  <!-- importation de bootstrap dans le projet -->
+  <!-- importation des classes css de bootstrap -->
+  <link rel="stylesheet" type="text/css" href="Public/static/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="Public/static/Style/style.css"/>
+  <script type="text/javascript" src="Public/static/Js/jquery.min.js"></script>
+  <script type="text/javascript" src="Public/static/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  </head>
+</head>
 
 
 <body id="top">
-<!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
 
   <div class="wrapper row0">
     <div id="topbar" class="hoc clear"> 
@@ -59,8 +60,13 @@
   <!-- test modal -->
   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 
-  <!-- Modal Login -->
+ <?php include("Public/partials/errors.php"); ?>
+  <!-- Modal Form Login -->
+ <?php require("Controlers/login.php"); ?>
+  <!-- modal register -->
+  <?php require("Controlers/register.php"); ?>
 
+<<<<<<< HEAD
 
   <div class="modal fade" id="loginModal" role="dialog">
     <div class="modal-dialog modal-sm">
@@ -106,60 +112,36 @@
 		        	<input type="text" name="username" class="form-control"  placeholder="@Schoda2017"/>
 	    		</div>
 	    	</div>
+=======
 
-	    	<div class="row">
-	    		<div class="col-sm-6">
-	    			<label>Email</label>
-	        		<input type="text" name="email" class="form-control"  placeholder="@Schoda2017@exemple.com"/>
-	    		</div>
-	    		<div class="col-sm-6">
-	    			<label>Telephone</label>
-		        	<input type="text" name="telephone" class="form-control"  placeholder="@(509)####-####"/>
-	    		</div>
-	    	</div>
+>>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
 
-	    	<div class="row">
-	    		<div class="col-sm-6">
-	    			<label>Secteur d'activite</label>
-	        		<input type="text" name="secteurActivite" class="form-control"  placeholder="@environement"/>
-	    		</div>
-	    		<div class="col-sm-6">
-	    			<label>Langue</label>
-		        	<input type="text" name="langue" class="form-control"  placeholder="@francais"/>
-	    		</div>
-	    	</div>
-	    	
-	    	<div class="row">
-	    		<div class="col-sm-6">
-	    			<label>Adresse</label>
-	        		<input type="text" name="adresse" class="form-control"  placeholder="@19,delmas"/>
-	    		</div>
-	    		<div class="col-sm-6">
-	    			<label>Photo</label>
-		        	<input type="submit" name="photo" class="form-control" value="Ajouter" />
-	    		</div>
-	    	</div>
-		    
-		    <div class="row">
-	    		<div class="col-sm-6">
-	    			<label>Password</label>
-	        		<input type="text" name="password" class="form-control"  placeholder="@*************"/>
-	    		</div>
-	    		<div class="col-sm-6">
-	    			<label>Password confirmation</label>
-		        	<input type="text" name="confirmPassword" class="form-control"  placeholder="@************"/>
-	    		</div>
-	    	</div>    
-	 	</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-info btn-md" data-dismiss="modal">Register</button>
-        </div>
-      </div>
-      </div>
-      
+
+<div class="bgded overlay" style="height: 130px;"> 
+  <!-- ################################################################################################ -->
+  <!-- menu -->
+  <?php
+
+  require_once("Views/menu.php");
+
+
+  ?>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!--  -->
+<div class="wrapper row3" >
+  <main class="hoc container clear" id="act"> 
+    <div class="block-act row">
+     <div class="img-block-act col-sm-4" >
+      <img src=""/>
+      <span>Org. XXX</span>
     </div>
-  </div>
+    <div class="content-block-act col-sm-4">
 
+<<<<<<< HEAD
   <div class="bgded overlay" style="height: 130px; background-image:url('Public/static/images/demo/backgrounds/img2.JPG')"> 
     <!-- ################################################################################################ -->
     <!-- menu -->
@@ -281,54 +263,87 @@
       <div class="one_quarter first">
         <h6 class="title">Finibus porttitor</h6>
         <address class="btmspace-30">
+=======
+    </div>
+    <div class="media-block-act col-sm-4">
+
+    </div>
+  </div >
+
+</main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="clear center btmspace-80">
+      <h2 class="heading font-x2">Opiami</h2>
+      <p>Efficitur in pulvinar orci eget libero malesuada in lobortis ipsum fermentum sed faucibus.</p>
+    </div>
+    <div class="one_quarter first">
+      <h6 class="title">Finibus porttitor</h6>
+      <address class="btmspace-30">
+>>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
         Street Name &amp; Number<br>
         Town<br>
         Postcode/Zip
-        </address>
-        <ul class="nospace">
-          <li class="btmspace-10"><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-          <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="title">Feugiat ullamcorper</h6>
-        <article>
-          <h2 class="nospace font-x1"><a href="#">Neque sodales enim</a></h2>
-          <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-          <p>Nullam scelerisque quam in dolor lobortis eleifend aliquam luctus elit vitae vulputate eleifend eu morbi.</p>
-        </article>
-      </div>
-      <div class="one_quarter">
-        <h6 class="title">Tellus eu cursus</h6>
-        <ul class="nospace linklist">
-          <li><a href="#">Arcu ac condimentum turpis</a></li>
-          <li><a href="#">Fusce vitae ante tellus</a></li>
-          <li><a href="#">Nunc varius auctor dapibus</a></li>
-          <li><a href="#">Aliquam consequat scelerisque</a></li>
-          <li><a href="#">Sapien at pulvinar rhoncus</a></li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="title">Nisi maximus nec</h6>
-        <p>Nec rutrum felis sem nec quam vivamus sodales enim nunc nam nisl nibh cursus at leo.</p>
-        <p>Lorem phasellus tellus tellus auctor ut posuere nec gravida nec urna proin at ipsum.</p>
-      </div>
-      <!-- ################################################################################################ -->
-    </footer>
-  </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
+      </address>
+      <ul class="nospace">
+        <li class="btmspace-10"><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Feugiat ullamcorper</h6>
+      <article>
+        <h2 class="nospace font-x1"><a href="#">Neque sodales enim</a></h2>
+        <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+        <p>Nullam scelerisque quam in dolor lobortis eleifend aliquam luctus elit vitae vulputate eleifend eu morbi.</p>
+      </article>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Tellus eu cursus</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Arcu ac condimentum turpis</a></li>
+        <li><a href="#">Fusce vitae ante tellus</a></li>
+        <li><a href="#">Nunc varius auctor dapibus</a></li>
+        <li><a href="#">Aliquam consequat scelerisque</a></li>
+        <li><a href="#">Sapien at pulvinar rhoncus</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Nisi maximus nec</h6>
+      <p>Nec rutrum felis sem nec quam vivamus sodales enim nunc nam nisl nibh cursus at leo.</p>
+      <p>Lorem phasellus tellus tellus auctor ut posuere nec gravida nec urna proin at ipsum.</p>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
-  <?php 
+<?php 
   	// include("pied.php");
-  	require_once("Views/pied.php");
-  ?>
-  
-  <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-  <!-- JAVASCRIPTS -->
-  <script src="Public/static/layout/scripts/jquery.min.js"></script>
-  <script src="Public/static/layout/scripts/jquery.backtotop.js"></script>
-  <script src="Public/static/layout/scripts/jquery.mobilemenu.js"></script>
-  </body>
+require_once("Views/pied.php");
+?>
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="Public/static/layout/scripts/jquery.min.js"></script>
+<script src="Public/static/layout/scripts/jquery.backtotop.js"></script>
+<script src="Public/static/layout/scripts/jquery.mobilemenu.js"></script>
+
+<script src="Public/assets/js/jquery-latest.js"></script>
+<script src="Public/librairies/parsley/parsley.min.js"></script>
+<script src="Public/librairies/parsley/i18n/fr.js"></script>
+
+
+</body>
 </html>
