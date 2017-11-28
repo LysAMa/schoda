@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63970840-b9b1-4cb4-8638-054d7d6ea7cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/formulaire_enquete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/formulaire_projet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controlers/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controlers/logout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controlers/profil.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controlers/register.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/assets/css/parsley.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/assets/js/jquery-latest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/filters/auth_filter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/filters/guest_filter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/includes/custom_functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/librairies/parsley/i18n/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/librairies/parsley/parsley.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/partials/errors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/login_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/register_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/config/db_connect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/loginpage.php" afterPath="$PROJECT_DIR$/Views/loginpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/menu.php" afterPath="$PROJECT_DIR$/Views/menu.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/pied.php" afterPath="$PROJECT_DIR$/Views/pied.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="schoda.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +51,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="259" selection-end-column="7" />
+            <state relative-caret-position="105">
+              <caret line="7" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="176" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -62,8 +74,8 @@
       <file leaf-file-name="pied.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/pied.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="97" selection-start-line="3" selection-start-column="97" selection-end-line="3" selection-end-column="97" />
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -79,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginpage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginpage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/loginpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-854">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="-2510">
+              <caret line="185" column="58" selection-start-line="185" selection-start-column="58" selection-end-line="185" selection-end-column="58" />
               <folding>
                 <element signature="e#1265#1272#0#HTML" expanded="true" />
               </folding>
@@ -91,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulaire_enquete.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="formulaire_enquete.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/formulaire_enquete.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
@@ -309,12 +321,12 @@
       <option name="presentableId" value="Default" />
       <updated>1511804641960</updated>
       <workItem from="1511804643581" duration="2469000" />
-      <workItem from="1511889147146" duration="13106000" />
+      <workItem from="1511889147146" duration="13342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15575000" />
+    <option name="totallyTimeSpent" value="15811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
@@ -453,16 +465,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="259" selection-end-column="7" />
+        <state relative-caret-position="105">
+          <caret line="7" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="176" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/formulaire_projet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/loginpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2510">
+          <caret line="185" column="58" selection-start-line="185" selection-start-column="58" selection-end-line="185" selection-end-column="58" />
+          <folding>
+            <element signature="e#1265#1272#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/pied.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="97" selection-start-line="3" selection-start-column="97" selection-end-line="3" selection-end-column="97" />
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -478,16 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/formulaire_projet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/formulaire_enquete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -495,16 +517,6 @@
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/loginpage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-854">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="e#1265#1272#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
