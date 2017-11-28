@@ -1,0 +1,59 @@
+li
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#act
+{
+	background-color: rgba(0,0,0,0.1);
+	height: 700px;
+	width: 80%;
+}
+
+.block-act
+{
+	width: 90%;
+	height: 300px;
+	background-color: white;
+	margin: 20px; 
+	border-radius: 1%;
+
+}
+
+.img-block-act
+{
+	width: 20%;
+	height: 100%;
+	background-color: gray;
+}
+
+.img-block-act img {
+	width: 80px;
+	height: 80px;
+	background-color: white;
+	border-radius: 50%; 
+	margin-top: 20px;
+}
+
+.img-block-act span {
+	color: white;
+	text-align: center;
+}
+
+
+
+.content-block-act
+{
+	width: 50%;
+	height: 100%;
+	background-color: blue;
+}
+
+
+
+.media-block-act
+{
+	width: 30%;
+	height: 100%;
+	background-color: green;
+}
