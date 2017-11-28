@@ -66,7 +66,7 @@
   <!-- modal register -->
   <div class="modal fade" id="registerModal" role="dialog">
     <div class="modal-dialog ">
-    
+<form method="post" >    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header panel panel-primary">
@@ -134,7 +134,7 @@
         </div>
       </div>
       </div>
-      
+      </form>
     </div>
   </div>
 
