@@ -23,6 +23,7 @@
   <!-- Top Background Image Wrapper -->
   <!-- test modal -->
   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
   <!-- Modal Login -->
 
   <div class="modal fade" id="loginModal" role="dialog">

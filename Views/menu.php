@@ -12,9 +12,11 @@
             <li><a href="#">A propos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Supportez-nous!</a></li>
+
           </ul>
         </nav>
       </header>
     </div>
-    <div id="pageintro" class="hoc clear"> 
-    </div>
+
+<!--    <div id="pageintro" class="hoc clear"> -->
+<!--    </div>-->
