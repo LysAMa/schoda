@@ -1,9 +1,3 @@
-<?php 
-
-
-
-?>
-
 <!DOCTYPE html>
 
 <html>
@@ -12,33 +6,23 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
       <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-
-      <!-- ################################################################################################ -->
-      		<!-- importation de bootstrap dans le projet -->
       			<!-- importation des classes css de bootstrap -->
       <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.min.css"/>
       <link rel="stylesheet" type="text/css" href="../Style/style.css"/>
       <script type="text/javascript" src="../Js/jquery.min.js"></script>
       <script type="text/javascript" src="../bootstrap/dist/js/bootstrap.min.js"></script>
-
   </head>
 
 
 <body id="top">
-<!-- ################################################################################################ -->
-
   <?php
   	// include("tete.php"); 
   	require_once("tete.php");
   ?>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- Top Background Image Wrapper -->
 
+  <!-- Top Background Image Wrapper -->
   <!-- test modal -->
   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-
   <!-- Modal Login -->
 
   <div class="modal fade" id="loginModal" role="dialog">
