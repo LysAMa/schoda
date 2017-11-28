@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.3deb1
+-- version 4.7.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Nov 27, 2017 at 02:15 PM
--- Server version: 5.6.30-1
--- PHP Version: 7.0.19-1
+-- Hôte : localhost
+-- Généré le :  mar. 28 nov. 2017 à 23:59
+-- Version du serveur :  10.1.26-MariaDB
+-- Version de PHP :  7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `schoda`
+-- Base de données :  `schoda`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `activity_log`
+-- Structure de la table `activity_log`
 --
 
 CREATE TABLE `activity_log` (
@@ -42,7 +44,7 @@ CREATE TABLE `activity_log` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `datasets`
+-- Structure de la table `datasets`
 --
 
 CREATE TABLE `datasets` (
@@ -58,7 +60,7 @@ CREATE TABLE `datasets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `images`
+-- Structure de la table `images`
 --
 
 CREATE TABLE `images` (
@@ -75,7 +77,7 @@ CREATE TABLE `images` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `languages`
+-- Structure de la table `languages`
 --
 
 CREATE TABLE `languages` (
@@ -95,7 +97,7 @@ CREATE TABLE `languages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Structure de la table `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -105,7 +107,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Déchargement des données de la table `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -130,7 +132,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_access_tokens`
+-- Structure de la table `oauth_access_tokens`
 --
 
 CREATE TABLE `oauth_access_tokens` (
@@ -148,7 +150,7 @@ CREATE TABLE `oauth_access_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_auth_codes`
+-- Structure de la table `oauth_auth_codes`
 --
 
 CREATE TABLE `oauth_auth_codes` (
@@ -163,7 +165,7 @@ CREATE TABLE `oauth_auth_codes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_clients`
+-- Structure de la table `oauth_clients`
 --
 
 CREATE TABLE `oauth_clients` (
@@ -182,7 +184,7 @@ CREATE TABLE `oauth_clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_personal_access_clients`
+-- Structure de la table `oauth_personal_access_clients`
 --
 
 CREATE TABLE `oauth_personal_access_clients` (
@@ -195,7 +197,7 @@ CREATE TABLE `oauth_personal_access_clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_refresh_tokens`
+-- Structure de la table `oauth_refresh_tokens`
 --
 
 CREATE TABLE `oauth_refresh_tokens` (
@@ -208,7 +210,7 @@ CREATE TABLE `oauth_refresh_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Structure de la table `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -220,7 +222,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permissions`
+-- Structure de la table `permissions`
 --
 
 CREATE TABLE `permissions` (
@@ -233,7 +235,7 @@ CREATE TABLE `permissions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permission_roles`
+-- Structure de la table `permission_roles`
 --
 
 CREATE TABLE `permission_roles` (
@@ -244,7 +246,7 @@ CREATE TABLE `permission_roles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permission_users`
+-- Structure de la table `permission_users`
 --
 
 CREATE TABLE `permission_users` (
@@ -255,7 +257,7 @@ CREATE TABLE `permission_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `projects`
+-- Structure de la table `projects`
 --
 
 CREATE TABLE `projects` (
@@ -273,7 +275,7 @@ CREATE TABLE `projects` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Structure de la table `roles`
 --
 
 CREATE TABLE `roles` (
@@ -286,7 +288,7 @@ CREATE TABLE `roles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `role_users`
+-- Structure de la table `role_users`
 --
 
 CREATE TABLE `role_users` (
@@ -297,7 +299,7 @@ CREATE TABLE `role_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sessions`
+-- Structure de la table `sessions`
 --
 
 CREATE TABLE `sessions` (
@@ -312,7 +314,7 @@ CREATE TABLE `sessions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `settings`
+-- Structure de la table `settings`
 --
 
 CREATE TABLE `settings` (
@@ -330,7 +332,7 @@ CREATE TABLE `settings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `surveys`
+-- Structure de la table `surveys`
 --
 
 CREATE TABLE `surveys` (
@@ -347,7 +349,7 @@ CREATE TABLE `surveys` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Structure de la table `users`
 --
 
 CREATE TABLE `users` (
@@ -364,250 +366,256 @@ CREATE TABLE `users` (
   `orgName` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `langue` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `dob`, `phone`, `secteurActivite`, `country`, `password`, `avatar`, `adresse`, `orgName`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Castro Alhdo', 'castroalhdo@gmail.com', NULL, NULL, NULL, NULL, '$2y$10$H/JHc.w6fdUlVWLjR5pbOeJIMw0aVhWRMy5sKpdtU7YS9zoejIrNW', NULL, NULL, NULL, NULL, '2017-11-27 23:09:59', '2017-11-27 23:09:59');
+INSERT INTO `users` (`id`, `name`, `email`, `dob`, `phone`, `secteurActivite`, `country`, `password`, `avatar`, `adresse`, `orgName`, `remember_token`, `created_at`, `updated_at`, `langue`) VALUES
+(1, 'Castro Alhdo', 'castroalhdo@gmail.com', NULL, NULL, NULL, NULL, '$2y$10$H/JHc.w6fdUlVWLjR5pbOeJIMw0aVhWRMy5sKpdtU7YS9zoejIrNW', NULL, NULL, NULL, NULL, '2017-11-27 23:09:59', '2017-11-27 23:09:59', ''),
+(24, 'ddssddd', 'fdfff@gm.g', NULL, 'fdffvf', 'fdfdv', 'dffsdf', '7c4a8d09ca3762af61e59520943dc26494f8941b', NULL, NULL, '                333', NULL, '2017-11-28 12:39:21', NULL, ''),
+(31, 'dffggfg', 'ddddssfd@d.gff', NULL, 'sffds', '54534--454', 'gdgdf', '7c4a8d09ca3762af61e59520943dc26494f8941b', NULL, NULL, 'fddfdgsd sgfdf', NULL, '2017-11-28 15:35:32', NULL, ''),
+(35, 'ray100', 'jraymonddoirn@gmail.com', NULL, '32807418', 'Telecom', NULL, '7c4a8d09ca3762af61e59520943dc26494f8941b', NULL, 'Diquini', 'Raymond Org', NULL, '2017-11-28 20:15:53', NULL, 'francais'),
+(36, 'Lyse Marie', 'lyse@gmia.com', NULL, '34666411', 'sante', NULL, '142d33a5aad6a21b5936651d2cea4778b96d8b24', NULL, 'delmas 2000', 'ESIH', NULL, '2017-11-28 22:58:44', NULL, 'anglais');
 
 --
--- Indexes for dumped tables
+-- Index pour les tables déchargées
 --
 
 --
--- Indexes for table `activity_log`
+-- Index pour la table `activity_log`
 --
 ALTER TABLE `activity_log`
   ADD PRIMARY KEY (`id`),
   ADD KEY `activity_log_log_name_index` (`log_name`);
 
 --
--- Indexes for table `datasets`
+-- Index pour la table `datasets`
 --
 ALTER TABLE `datasets`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `images`
+-- Index pour la table `images`
 --
 ALTER TABLE `images`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `languages`
+-- Index pour la table `languages`
 --
 ALTER TABLE `languages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migrations`
+-- Index pour la table `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `oauth_access_tokens`
+-- Index pour la table `oauth_access_tokens`
 --
 ALTER TABLE `oauth_access_tokens`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_access_tokens_user_id_index` (`user_id`);
 
 --
--- Indexes for table `oauth_auth_codes`
+-- Index pour la table `oauth_auth_codes`
 --
 ALTER TABLE `oauth_auth_codes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `oauth_clients`
+-- Index pour la table `oauth_clients`
 --
 ALTER TABLE `oauth_clients`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_clients_user_id_index` (`user_id`);
 
 --
--- Indexes for table `oauth_personal_access_clients`
+-- Index pour la table `oauth_personal_access_clients`
 --
 ALTER TABLE `oauth_personal_access_clients`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_personal_access_clients_client_id_index` (`client_id`);
 
 --
--- Indexes for table `oauth_refresh_tokens`
+-- Index pour la table `oauth_refresh_tokens`
 --
 ALTER TABLE `oauth_refresh_tokens`
   ADD PRIMARY KEY (`id`),
   ADD KEY `oauth_refresh_tokens_access_token_id_index` (`access_token_id`);
 
 --
--- Indexes for table `password_resets`
+-- Index pour la table `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indexes for table `permissions`
+-- Index pour la table `permissions`
 --
 ALTER TABLE `permissions`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `permissions_name_unique` (`name`);
 
 --
--- Indexes for table `permission_roles`
+-- Index pour la table `permission_roles`
 --
 ALTER TABLE `permission_roles`
   ADD PRIMARY KEY (`permission_id`,`role_id`),
   ADD KEY `permission_roles_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `permission_users`
+-- Index pour la table `permission_users`
 --
 ALTER TABLE `permission_users`
   ADD PRIMARY KEY (`user_id`,`permission_id`),
   ADD KEY `permission_users_permission_id_foreign` (`permission_id`);
 
 --
--- Indexes for table `projects`
+-- Index pour la table `projects`
 --
 ALTER TABLE `projects`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `roles`
+-- Index pour la table `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `roles_name_unique` (`name`);
 
 --
--- Indexes for table `role_users`
+-- Index pour la table `role_users`
 --
 ALTER TABLE `role_users`
   ADD PRIMARY KEY (`role_id`,`user_id`),
   ADD KEY `role_users_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `sessions`
+-- Index pour la table `sessions`
 --
 ALTER TABLE `sessions`
   ADD UNIQUE KEY `sessions_id_unique` (`id`);
 
 --
--- Indexes for table `settings`
+-- Index pour la table `settings`
 --
 ALTER TABLE `settings`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `surveys`
+-- Index pour la table `surveys`
 --
 ALTER TABLE `surveys`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Index pour la table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT for table `activity_log`
+-- AUTO_INCREMENT pour la table `activity_log`
 --
 ALTER TABLE `activity_log`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `datasets`
+-- AUTO_INCREMENT pour la table `datasets`
 --
 ALTER TABLE `datasets`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `images`
+-- AUTO_INCREMENT pour la table `images`
 --
 ALTER TABLE `images`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `languages`
+-- AUTO_INCREMENT pour la table `languages`
 --
 ALTER TABLE `languages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT pour la table `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
--- AUTO_INCREMENT for table `oauth_clients`
+-- AUTO_INCREMENT pour la table `oauth_clients`
 --
 ALTER TABLE `oauth_clients`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `oauth_personal_access_clients`
+-- AUTO_INCREMENT pour la table `oauth_personal_access_clients`
 --
 ALTER TABLE `oauth_personal_access_clients`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `permissions`
+-- AUTO_INCREMENT pour la table `permissions`
 --
 ALTER TABLE `permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `projects`
+-- AUTO_INCREMENT pour la table `projects`
 --
 ALTER TABLE `projects`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT pour la table `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `settings`
+-- AUTO_INCREMENT pour la table `settings`
 --
 ALTER TABLE `settings`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `surveys`
+-- AUTO_INCREMENT pour la table `surveys`
 --
 ALTER TABLE `surveys`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
--- Constraints for dumped tables
+-- Contraintes pour les tables déchargées
 --
 
 --
--- Constraints for table `permission_roles`
+-- Contraintes pour la table `permission_roles`
 --
 ALTER TABLE `permission_roles`
   ADD CONSTRAINT `permission_roles_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `permission_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `permission_users`
+-- Contraintes pour la table `permission_users`
 --
 ALTER TABLE `permission_users`
   ADD CONSTRAINT `permission_users_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `permission_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `role_users`
+-- Contraintes pour la table `role_users`
 --
 ALTER TABLE `role_users`
   ADD CONSTRAINT `role_users_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `role_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

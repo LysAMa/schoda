@@ -1,4 +1,4 @@
-  <form action="" method="POST"  data-parsley-validate autocomplete="off">
+  <form action="" method="POST" enctype="multipart/form-data" data-parsley-validate autocomplete="off">
     <div class="modal fade" id="registerModal" role="dialog">
       <div class="modal-dialog ">
 
@@ -50,7 +50,8 @@
       </div>
       <div class="col-sm-6">
         <label>Photo</label>
-        <input type="submit" name="photo" class="form-control" value="Ajouter" />
+        <input type="file" name="fileToUpload" id="fileToUpload">
+       
       </div>
     </div>
 
