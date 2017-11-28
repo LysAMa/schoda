@@ -25,7 +25,7 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:5px 0; font-size:12px;}
 
-#topbar .fl_right{}
+#topbar .fl_right{margin-top: 0px}
 #topbar .fl_right i{margin:0 5px 0 0; line-height:normal;}
 
 
@@ -142,7 +142,8 @@ File: Layout CSS
 *, *::before, *::after{transition:all .3s ease-in-out;}
 #mainav form *{transition:none;!important}
 
-
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav2 form *{transition:none;!important}
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -155,7 +156,11 @@ File: Layout CSS
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px;line-height:10px;}
+
+#mainav2, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav2 .drop::after, #mainav2 li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
 
 /* Top Navigation */
 #mainav{}
@@ -180,6 +185,31 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
 #mainav form select{width:100%; padding:5px; border:1px solid;}
 #mainav form select option{margin:5px; padding:0; border:none;}
+
+
+#mainav2{}
+#mainav2 ul.clear{margin-top:3px;}
+#mainav2 ul{text-transform:uppercase;}
+#mainav2 ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav2 ul ul ul{left:180px; top:0;}
+#mainav2 li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav2 li:last-child{margin-right:0;}
+#mainav2 li li{width:100%; margin:0;}
+#mainav2 li a{display:block; padding:30px 0;}
+#mainav2 li li a{border:solid; border-width:0 0 1px 0;}
+#mainav2 .drop{padding-left:15px;}
+#mainav2 li li a, #mainav2 li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav2 .drop::after, #mainav2 li li .drop::after{content:"\f0d7";}
+#mainav2 .drop::after{top:35px; left:5px;}
+#mainav2 li li .drop::after{top:15px; right:5px;}
+#mainav2 ul ul{visibility:hidden; opacity:0;}
+#mainav2 ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav2 form{display:none; margin:0; padding:0;}
+#mainav2 form select, #mainav2 form select option{display:block; cursor:pointer; outline:none;}
+#mainav2 form select{width:100%; padding:5px; border:1px solid;}
+#mainav2 form select option{margin:5px; padding:0; border:none;}
+
 
 /* Breadcrumb */
 #breadcrumb{padding:15px 0;}
@@ -275,6 +305,9 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 
 /* Rows */
 .row0, .row0 a{color:black; background-color:#4C4646;}
+.row0{
+	height: 50px;
+}
 .row1, .row1 a{}
 .row2{color:#A6A6A6; background-color:rgba(0,0,0,.3);}
 .row3{color:#797979; background-color:#FFFFFF;}
@@ -383,17 +416,17 @@ table a, #comments a{background-color:inherit;}
 
 
 
-
 @media screen and (max-width:750px){
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
+
 	#topbar, #header{text-align:center;}
 
 	#header #logo{margin-bottom:15px;}
 
-	#topbar .fl_left{margin-bottom:10px;}
+	#topbar .fl_left{margin-bottom:10px; margin-top: 13px}
 	#topbar .faico li{float:none;}
 	#topbar .fl_right li{display:inline-block;}
 	#topbar .fl_right li:first-child{margin-right:20px;}

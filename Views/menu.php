@@ -6,7 +6,7 @@
         </div>
         <nav id="mainav" class="fl_right">
           <ul class="clear">
-            <li class="active"><a href="PHP/loginpage.php">Home</a></li>
+            <li class="active"><a href="Views/loginpage.php">Home</a></li>
             <li><a class="drop" href="#">Pages</a>
               <ul>
                 <li><a href="pages/gallery.html">Gallery</a></li>

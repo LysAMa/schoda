@@ -12,7 +12,7 @@
           <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
         </ul>
       </div>
-      <div class="fl_right">
+      <div class="fl_right" id="fl_right">
         <ul class="nospace inline pushright">
           <li><input type="text" class="form-control" id="pwd" name="champ_recherche"></li>
           <li><input type="submit" class="btn btn-info btn-log" name="btn_recherche" value="Recherche"></li>
