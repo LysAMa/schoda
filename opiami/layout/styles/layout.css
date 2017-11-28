@@ -233,7 +233,7 @@ td{border-width:0 1px;}
 
 .faico a{display:block; font-size:14px; text-align:center;}
 
-.faico a{color:inherit; background-color:transparent;}
+.faico a{color:black; background-color:transparent;}
 .faicon-dribble:hover{color:#EA4C89;}
 .faicon-facebook:hover{color:#3B5998;}
 .faicon-google-plus:hover{color:#DB4A39;}
@@ -252,7 +252,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A6A6A6; background-color:#26272B;}
+body{color:blue; background-color:#EBF4FA;}
 a{color:#56AED4;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -266,7 +266,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 
 
 /* Rows */
-.row0, .row0 a{color:#A6A6A6; background-color:#26272B;}
+.row0, .row0 a{color:black; background-color:#4C4646;}
 .row1, .row1 a{}
 .row2{color:#A6A6A6; background-color:rgba(0,0,0,.3);}
 .row3{color:#797979; background-color:#FFFFFF;}
@@ -282,7 +282,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 .services article{color:inherit; background-color:#F7F7F7; border-color:#56AED4;}
 .services article .txtwrap{border-color:transparent;}
 .services article:hover .txtwrap{border-color:#D7D7D7;}
-.services article footer a{color:#FFFFFF; background-color:#56AED4;}
+.services article footer a{color:#FFFFFF; background-color:#00FFFF;}
 
 .latest article figure figcaption{color:#FFFFFF;}
 .latest article figure figcaption time{background-color:rgba(0,0,0,.65);}
@@ -343,15 +343,15 @@ table a, #comments a{background-color:inherit;}
 
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width:978px){
+@media screen and (min-width:500px){
 	.hoc{max-width:978px;}
 }
 
 
 /* Mobile Devices
 --------------------------------------------------------------------------------------------------------------- */
-@media screen and (max-width:900px){
-	.hoc{max-width:90%;}
+@media screen and (max-width:500px){
+	.hoc{max-width:50%;}
 
 	#topbar{}
 
