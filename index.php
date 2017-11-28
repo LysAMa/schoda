@@ -66,7 +66,55 @@ session_start();
   <!-- modal register -->
   <?php require("Controlers/register.php"); ?>
 
+<<<<<<< HEAD
 
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Connectez</h4>
+        </div>
+        <div class="modal-body">
+        	<input type="text" class="form-control" name="user_name" placeholder="@username"/><br/>
+        	<input type="password" class="form-control" name="user_password" placeholder="@password"/>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Login</button>
+          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <!-- modal register -->
+  <div class="modal fade" id="registerModal" role="dialog">
+    <div class="modal-dialog ">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header panel panel-primary">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Register</h4>
+        </div>
+        <div class="modal-body">
+	    	<div class="row">
+	    		<div class="col-sm-6">
+	    			<label>Nom de L'organisation</label>
+	        		<input type="text" name="orgName" class="form-control"  placeholder="@Schoda"/>
+	    		</div>
+	    		<div class="col-sm-6">
+	    			<label>Nom d'utilisateur</label>
+		        	<input type="text" name="username" class="form-control"  placeholder="@Schoda2017"/>
+	    		</div>
+	    	</div>
+=======
+
+>>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
 
 
 <div class="bgded overlay" style="height: 130px;"> 
@@ -93,6 +141,129 @@ session_start();
     </div>
     <div class="content-block-act col-sm-4">
 
+<<<<<<< HEAD
+  <div class="bgded overlay" style="height: 130px; background-image:url('Public/static/images/demo/backgrounds/img2.JPG')"> 
+    <!-- ################################################################################################ -->
+    <!-- menu -->
+   <div class="wrapper row1">
+      <header id="header" class="hoc clear"> 
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1><a href="index.php">Work With Data</a></h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active"><a href="Views/loginpage.php">Home</a></li>
+            <li><a class="drop" href="#">Pages</a>
+              <ul>
+                <li><a href="pages/gallery.html">Gallery</a></li>
+                <li><a href="pages/full-width.html">Full Width</a></li>
+                <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+              </ul>
+            </li>
+            <li><a class="drop" href="#">Dropdown</a>
+              <ul>
+                <li><a href="#">Level 2</a></li>
+                <li><a class="drop" href="#">Level 2 + Drop</a>
+                  <ul>
+                    <li><a href="#">Level 3</a></li>
+                    <li><a href="#">Level 3</a></li>
+                    <li><a href="#">Level 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Level 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Apropos</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div id="pageintro" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+     
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- End Top Background Image Wrapper -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!--  -->
+  <div class="wrapper row3" >
+    <main class="hoc container clear" id="act"> 
+
+     <div class="block-act row">
+        <div class="img-block-act col-sm-4" >
+          <img src="Public/static/images/demo/avatar5.png"/>
+          <span>Org. XXX</span>
+        </div>
+        <div class="content-block-act col-sm-4">
+          <div class="block-title">
+            <p><strong>Nullam scelerisque</strong></p>
+            <hr/>
+          </div>
+          <div class="block-desc">
+            <p>Nullam scelerisque quam in dolor lobortis eleifend aliquam luctus elit vitae vulputate eleifend eu morbi.</p>
+            <p>Nullam scelerisque quam in dolor lobortis eleifend aliquam luctus elit vitae vulputate eleifend eu morbi.</p>
+          </div>
+          
+        </div>
+        <div class="media-block-act col-sm-4">
+          <div>
+            
+          </div>
+            <input type="submit" class="btn btn-info btn-md" data-toggle="modal" data-target="#detailModal" name="btn-detail" value="Detail" style="margin-top: 50%;" />
+          
+        </div>
+      </div >
+
+      <div class="modal fade" id="detailModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Connectez</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" name="user_name" placeholder="@username"/><br/>
+          <input type="password" class="form-control" name="user_password" placeholder="@password"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Login</button>
+          <button type="button" class="btn btn-info btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+    </main>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  
+  
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div class="clear center btmspace-80">
+        <h2 class="heading font-x2">Opiami</h2>
+        <p>Efficitur in pulvinar orci eget libero malesuada in lobortis ipsum fermentum sed faucibus.</p>
+      </div>
+      <div class="one_quarter first">
+        <h6 class="title">Finibus porttitor</h6>
+        <address class="btmspace-30">
+=======
     </div>
     <div class="media-block-act col-sm-4">
 
@@ -118,6 +289,7 @@ session_start();
     <div class="one_quarter first">
       <h6 class="title">Finibus porttitor</h6>
       <address class="btmspace-30">
+>>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
         Street Name &amp; Number<br>
         Town<br>
         Postcode/Zip

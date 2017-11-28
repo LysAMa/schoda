@@ -6,31 +6,32 @@ li
 #act
 {
 	background-color: rgba(0,0,0,0.1);
-	height: 700px;
-	width: 80%;
+	min-height: 700px;
+	width: 60%;
+	padding-top: 10px;
 }
 
 .block-act
 {
-	width: 90%;
-	height: 300px;
+	width: 100%;
+	min-height: 200px;
 	background-color: white;
-	margin: 20px; 
 	border-radius: 1%;
-
+	margin: auto;
+	margin-bottom: 10px;
 }
 
 .img-block-act
 {
 	width: 20%;
 	height: 100%;
-	background-color: gray;
 }
+
 
 .img-block-act img {
 	width: 80px;
 	height: 80px;
-	background-color: white;
+	background-color: gray;
 	border-radius: 50%; 
 	margin-top: 20px;
 }
@@ -40,20 +41,25 @@ li
 	text-align: center;
 }
 
+.block-title
+{
+	margin-top: 17px;
+	font-size: 24px;
+	font-weight: bold;
+}
 
 
 .content-block-act
 {
 	width: 50%;
 	height: 100%;
-	background-color: blue;
 }
 
 
 
 .media-block-act
 {
+
 	width: 30%;
 	height: 100%;
-	background-color: green;
 }
