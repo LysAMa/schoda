@@ -165,7 +165,6 @@
 
     	require_once("Views/menu.php");
 
-
     ?>
     <!-- ################################################################################################ -->
   </div>
@@ -175,18 +174,12 @@
   <!--  -->
   <div class="wrapper row3" >
     <main class="hoc container clear" id="act"> 
-      <div class="block-act row">
-      	<div class="img-block-act col-sm-4" >
-      		<img src=""/>
-      		<span>Org. XXX</span>
-      	</div>
-      	<div class="content-block-act col-sm-4">
-      		
-      	</div>
-      	<div class="media-block-act col-sm-4">
-      		
-      	</div>
-      </div >
+
+      <?php
+        require("Views/activities.php");
+        require("Views/activities.php");
+      ?>
+
       
     </main>
   </div>
