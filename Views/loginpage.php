@@ -5,7 +5,6 @@
     <title>Schoda</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<<<<<<< HEAD
       <link href="../Public/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 
       <!-- ################################################################################################ -->
@@ -16,35 +15,18 @@
       <script type="text/javascript" src="../Public/static/Js/jquery.min.js"></script>
       <script type="text/javascript" src="../Public/static/bootstrap/dist/js/bootstrap.min.js"></script>
 
-=======
       <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
       			<!-- importation des classes css de bootstrap -->
-      <link rel="stylesheet" type="text/css" href="../bootstrap/dist/css/bootstrap.min.css"/>
-      <link rel="stylesheet" type="text/css" href="../Style/style.css"/>
-      <script type="text/javascript" src="../Js/jquery.min.js"></script>
-      <script type="text/javascript" src="../bootstrap/dist/js/bootstrap.min.js"></script>
->>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
   </head>
 
 
 <body id="top">
-<<<<<<< HEAD
 <!-- ################################################################################################ -->
 
   <div class="wrapper row0">
     <div id="topbar" class="hoc clear"> 
       <!-- ################################################################################################ -->
-      <div class="fl_left">
-        <ul class="faico clear">
-          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
-        </ul>
-      </div>
+      
       <div class="fl_right">
         <nav id="mainav2" class="fl_right org">
           <ul class="nospace inline pushright clear">
@@ -89,12 +71,9 @@
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- Top Background Image Wrapper -->
-=======
   <?php
-  	// include("tete.php"); 
   	require_once("tete.php");
   ?>
->>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
 
   <!-- Top Background Image Wrapper -->
   <!-- test modal -->
@@ -266,58 +245,7 @@
       
     </main>
   </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
   
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div class="wrapper row4">
-    <footer id="footer" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <div class="clear center btmspace-80">
-        <h2 class="heading font-x2">Opiami</h2>
-        <p>Efficitur in pulvinar orci eget libero malesuada in lobortis ipsum fermentum sed faucibus.</p>
-      </div>
-      <div class="one_quarter first">
-        <h6 class="title">Finibus porttitor</h6>
-        <address class="btmspace-30">
-        Street Name &amp; Number<br>
-        Town<br>
-        Postcode/Zip
-        </address>
-        <ul class="nospace">
-          <li class="btmspace-10"><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-          <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="title">Feugiat ullamcorper</h6>
-        <article>
-          <h2 class="nospace font-x1"><a href="#">Neque sodales enim</a></h2>
-          <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-          <p>Nullam scelerisque quam in dolor lobortis eleifend aliquam luctus elit vitae vulputate eleifend eu morbi.</p>
-        </article>
-      </div>
-      <div class="one_quarter">
-        <h6 class="title">Tellus eu cursus</h6>
-        <ul class="nospace linklist">
-          <li><a href="#">Arcu ac condimentum turpis</a></li>
-          <li><a href="#">Fusce vitae ante tellus</a></li>
-          <li><a href="#">Nunc varius auctor dapibus</a></li>
-          <li><a href="#">Aliquam consequat scelerisque</a></li>
-          <li><a href="#">Sapien at pulvinar rhoncus</a></li>
-        </ul>
-      </div>
-      <div class="one_quarter">
-        <h6 class="title">Nisi maximus nec</h6>
-        <p>Nec rutrum felis sem nec quam vivamus sodales enim nunc nam nisl nibh cursus at leo.</p>
-        <p>Lorem phasellus tellus tellus auctor ut posuere nec gravida nec urna proin at ipsum.</p>
-      </div>
-      <!-- ################################################################################################ -->
-    </footer>
-  </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->

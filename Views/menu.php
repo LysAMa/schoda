@@ -8,7 +8,6 @@
 <!--        Liste des menus-->
         <nav id="mainav" class="fl_right">
           <ul class="clear">
-<<<<<<< HEAD
             <li class="active"><a href="Views/loginpage.php">Home</a></li>
             <li><a class="drop" href="#">Pages</a>
               <ul>
@@ -19,26 +18,9 @@
                 <li><a href="pages/basic-grid.html">Basic Grid</a></li>
               </ul>
             </li>
-            <li><a class="drop" href="#">Dropdown</a>
-              <ul>
-                <li><a href="#">Level 2</a></li>
-                <li><a class="drop" href="#">Level 2 + Drop</a>
-                  <ul>
-                    <li><a href="#">Level 3</a></li>
-                    <li><a href="#">Level 3</a></li>
-                    <li><a href="#">Level 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Level 2</a></li>
-              </ul>
-            </li>
+            
             <li><a href="#">Apropos</a></li>
-=======
-            <li class="active"><a href="PHP/loginpage.php">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
->>>>>>> 8460f8895a10ad835c7d6260da7e7f0d4b80238f
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Supportez-nous!</a></li>
 
           </ul>
         </nav>
