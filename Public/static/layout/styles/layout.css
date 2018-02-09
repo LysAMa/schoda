@@ -348,6 +348,12 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#56AED4;}
 #mainav form select{color:#FFFFFF; background-color:#26272B; border-color:rgba(255,255,255,.2);}
 
+#mainav2 li a{color:inherit;}
+#mainav2 .active a, #mainav2 a:hover, #mainav2 li:hover > a{color:#56AED4; background-color:inherit;}
+#mainav2 li li a, #mainav2 .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav2 li li:hover > a, #mainav2 .active .active > a{color:#FFFFFF; background-color:#56AED4;}
+#mainav2 form select{color:#FFFFFF; background-color:#26272B; border-color:rgba(255,255,255,.2);}
+
 #breadcrumb a{color:inherit; background-color:inherit;}
 #breadcrumb li:last-child a{}
 
@@ -401,6 +407,10 @@ table a, #comments a{background-color:inherit;}
 	#mainav{}
 	#mainav ul{display:none;}
 	#mainav form{display:block;}
+
+	#mainav2{}
+	#mainav2 ul{display:none;}
+	#mainav2 form{display:block;}
 
 	#breadcrumb{}
 

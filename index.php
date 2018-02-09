@@ -118,7 +118,7 @@ session_start();
             <div class="wrapper row3" >
               <main class="hoc container clear" id="act"> 
 
-               <div class="block-act row">
+              <!--  <div class="block-act row">
                   <div class="img-block-act col-sm-4" >
                     <img src="Public/static/images/demo/avatar5.png"/>
                     <span>Org. XXX</span>
@@ -141,7 +141,17 @@ session_start();
                       <input type="submit" class="btn btn-info btn-md" data-toggle="modal" data-target="#detailModal" name="btn-detail" value="Detail" style="margin-top: 50%;" />
                     
                   </div>
-                </div >
+                </div > -->
+
+                <?php
+                  include("Views/activities.php");
+                  include("Views/activities.php");
+                  include("Views/activities.php");
+                  include("Views/activities.php");
+                  include("Views/activities.php");
+                  include("Views/activities.php");
+                  include("Views/activities.php");
+                ?>
 
                 <div class="modal fade" id="detailModal" role="dialog">
               <div class="modal-dialog modal-sm">

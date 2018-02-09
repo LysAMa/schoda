@@ -3,6 +3,7 @@ li
 	display: inline-block;
 	vertical-align: top;
 }
+
 #act
 {
 	background-color: rgba(0,0,0,0.1);
@@ -40,16 +41,12 @@ li
 	text-align: center;
 }
 
-
-
 .content-block-act
 {
 	width: 50%;
 	height: 100%;
 	background-color: blue;
 }
-
-
 
 .media-block-act
 {
